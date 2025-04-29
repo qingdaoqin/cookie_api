@@ -1,0 +1,17 @@
+# 多环境配置
+env: test #默认环境
+
+test:
+  base_url: "https://xxx_test.com"
+  username: "qinqingdao"
+  passwd: "qinqingdao123"
+
+prod:
+  base_url: "https://xxx_prod.com"
+  username: "qinqingdao"
+  passwd: "qinqingdao123"
+
+online:
+  base_url: "https://xxx.com"
+  username: "qinqingdao"
+  passwd: "qinqingdao123"

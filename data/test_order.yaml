@@ -1,0 +1,16 @@
+create_order:
+  - case: 创建普通订单
+    params:
+      product_id: 1001
+      quantity: 2
+    expected:
+      code: 200
+      msg: "操作成功"
+
+  - case: 创建缺货订单
+    params:
+      product_id: 9999
+      quantity: 1
+    expected:
+      code: 400
+      msg: "库存不足"
